@@ -1,9 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --blue: rgba(59, 140, 245, 0.808);
+}
 
+body {
+  font-family: "Roboto Mono", sans-serif;
+}
 .grid-container {
   display: grid;
   height: 100vh;
@@ -54,7 +62,6 @@
   display: flex;
   align-items: center;
   gap: 24px;
-
 }
 
 .search-section div:last-child {
@@ -121,12 +128,58 @@
   font-size: 1.2rem;
 }
 
+.profile-section > div:first-child > div {
+  display: flex;
+  flex-flow: column;
+  gap: 12px;
+}
+
 .profile-section button {
   padding: 14px 20px;
-  background-color: rgba(59, 140, 245, 0.808);
+  background-color: var(--blue);
   color: white;
   border-radius: 16px;
   border: none;
 }
 
+/* sidebar */
+.sidebar {
+  background-color: var(--blue);
+  color: white;
+  font-size: 1.3rem;
+  font-weight:bolder;
+  letter-spacing: 3px;
+}
 
+.sidebar-icons{
+  height: auto;
+  width: 30px;
+}
+
+.sidebar {
+  display: flex;
+  flex-flow: column;
+  gap: 100px;
+  padding: 24px;
+}
+
+.logo {
+  font-size: 2.5rem;
+}
+
+.sidebar-settings {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.sidebar > div {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sidebar-settings > img {
+  filter: invert(1);
+}
