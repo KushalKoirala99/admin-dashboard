@@ -43,17 +43,77 @@
 }
 
 .search-section{
-    border: 1px solid black;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 24px;
 }
 
 .search-section div:first-child {
-    flex: 1;
-    border: 1px solid black;
+    flex-basis: 60%;
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
 }
 
+.search-section div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 30%;
+    gap: 24px;
+}
+
+.search-section input {
+flex: 1;
+padding: 10px;
+border-radius: 24px;
+border: none;
+background-color: rgb(230, 229, 228);
+}
+
+.icon {
+    height: auto;
+    width: 40px;
+}
+
+.search-section .pic {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.search-section p {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.profile-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.profile-section div:first-child {
+    border: 1px solid black;
+    display: flex;
+    flex-basis: 60%;
+    align-items: center;
+    gap: 24px;
+    
+}
+
+.profile-section div:last-child {
+    border: 1px solid black;
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 24px;
+}
+
+.profile-section .pic {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
