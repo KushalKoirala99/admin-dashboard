@@ -76,15 +76,34 @@ body {
 
 .search-section input {
   flex: 1;
-  padding: 10px;
+  padding: 12px;
   border-radius: 24px;
+  font-size: 16px;
   border: none;
+  outline: none;
   background-color: rgb(230, 229, 228);
+  transition: all 0.3s ease-in-out;
+}
+
+.search-section input:hover {
+  border-color: #007bff;
+  box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.2);
+
+}
+
+input:focus {
+  border-color: #0056b3;
+  box-shadow: 0px 6px 12px rgba(0, 86, 179, 0.3);
 }
 
 .icon {
   height: auto;
   width: 40px;
+  transition: all 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
 }
 
 .search-section .pic {
@@ -142,6 +161,22 @@ body {
   color: white;
   border-radius: 16px;
   border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1)
+}
+
+.profile-section button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.pic {
+  transition: all 0.3s ease;
+}
+
+.pic:hover{
+  transform: scale(1.2);
 }
 
 /* sidebar */
@@ -173,6 +208,20 @@ body {
   display: flex;
   gap: 32px;
   align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-settings:hover {
+  transform: scale(1.05);
+}
+
+.sidebar-settings:hover p {
+  color: #f1f1f1;
+}
+
+.sidebar-settings:hover img {
+  filter: invert(1) brightness(1.5);
 }
 
 .sidebar > div {
