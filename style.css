@@ -47,14 +47,16 @@ body {
 .header {
   display: flex;
   flex-flow: column;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  padding: 16px 24px;
+  margin-bottom: 40px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 .search-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
 }
 
 .search-section div:first-child {
@@ -100,7 +102,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px;
+  padding-top: 24px;
 }
 
 .profile-section div:first-child {
@@ -135,7 +137,7 @@ body {
 }
 
 .profile-section button {
-  padding: 14px 20px;
+  padding: 16px 36px;
   background-color: var(--blue);
   color: white;
   border-radius: 16px;
@@ -147,11 +149,11 @@ body {
   background-color: var(--blue);
   color: white;
   font-size: 1.3rem;
-  font-weight:bolder;
+  font-weight: bolder;
   letter-spacing: 3px;
 }
 
-.sidebar-icons{
+.sidebar-icons {
   height: auto;
   width: 30px;
 }
@@ -182,4 +184,44 @@ body {
 
 .sidebar-settings > img {
   filter: invert(1);
+}
+
+/* main  */
+
+.main-content {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+  flex: 1 1 280px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+ .main-content p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
 }
